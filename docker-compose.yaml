@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+    web_app_s1:
+        container_name: web_app_run
+        build: ./web_app_s1
+        image: web_app:latest
+        ports:
+            - target: 5001
+              protocol: tcp
+    
+    random_letters_s2:
+        container_name: random_letters_run
+        build: ./random_letters_s2
+        image: random_letters:latest
+        ports:
+            - target: 5002
+              protocol: tcp
+    
+    random_numbers_s3:
+        container_name: random_numbers_run
+        build: ./random_numbers_s3
+        image: random_numbers:latest
+        ports:
+            - target: 5003
+              protocol: tcp
+
