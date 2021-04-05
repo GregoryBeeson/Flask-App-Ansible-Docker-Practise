@@ -7,6 +7,9 @@
 QA tasked me with creating a project "DevOps-Core-Practical-Project"
 In order to achvive the goals set out for me by QA I have decided to make a simple
 web application using flask which runs in docker.
+
+To achive this goal I am making a prize generator that will give users larger prizes 
+depending on the random string and number given by the generator.
 <br>
 
 ## Requirements
@@ -49,3 +52,4 @@ up to date with developments be sure to checkout it out!
 
 ## Refrences
 ***
+- Corey Schafer, [Video](https://www.youtube.com/watch?v=tb8gHvYlCFs)

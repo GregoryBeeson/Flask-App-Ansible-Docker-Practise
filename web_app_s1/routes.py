@@ -1,6 +1,8 @@
 from flask import Flask, render_template
 import requests
 from __init__ import app
+
+
 @app.route('/')
 @app.route('/home')
 def home():
