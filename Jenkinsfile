@@ -1,10 +1,13 @@
 pipeline {
     agent any
+        environment{
+            DATABASE_URI = credentials("DATABASE_URI")
+        }
     stages{
 
         stage('Stage 1: Test')
         {
-
+            sh "echo place holder"
         }
 
         stage('Stage 2: Build')
