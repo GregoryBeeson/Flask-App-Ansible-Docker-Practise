@@ -1,2 +1,4 @@
 
 **web_app_s1/__pycache__
+**web_app_s1/.pytest_cache
+**web_app_s1/testing/__pycache__

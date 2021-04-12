@@ -1,0 +1,10 @@
+---
+# tasks file for worker
+
+- name: Join the swarm
+  become: true
+  community.docker.docker_swarm:
+    state: join
+    advertise_addr: "{{ absible_default_ipv4['address'] }}"
+    join_token: "{{ hostvars['manager']['swarm_info']['swarm_facts']['JoinToken']['Worker'] }}"
+    remote_addrs: [ 'project-manager:2377' ]

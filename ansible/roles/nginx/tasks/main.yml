@@ -1,0 +1,27 @@
+---
+# tasks file for nginx
+- name: 'Install NGINX'
+  become: true
+  apt:
+    pkg:
+    - nginx
+    state: latest
+    update_cache: true
+
+- name: 'Check if started'
+  become: true
+  service:
+    name: nginx
+    state: started
+
+- name: 'install the nginx.conf'
+  become: true
+  template:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+
+- name: 'reoload NGINX'
+  become: true
+  service:
+    name: nginx
+    state: reloaded

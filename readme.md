@@ -18,6 +18,9 @@ depending on the random string and number given by the generator.
 <li>Docker</li>
 <li>Docker-Compose</li>
 <li>Flask</li>
+<li>Pytest</li>
+<li>Jenkins</li>
+<li>Ansible</li>
 </ul>
 <br>
 

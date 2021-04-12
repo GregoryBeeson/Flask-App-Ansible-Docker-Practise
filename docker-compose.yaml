@@ -3,7 +3,7 @@ services:
     web_app_s1:
         container_name: web_app_run
         build: ./web_app_s1
-        image: web_app:latest
+        image: gbeesonqa/qa-devops-core-practical-project-web_app:latest
         ports:
             - target: 5001
               published: 5001
@@ -12,7 +12,7 @@ services:
     random_letters_s2:
         container_name: random_letters_run
         build: ./random_letters_s2
-        image: random_letters:latest
+        image: gbeesonqa/qa-devops-core-practical-project-random_letters:latest
         ports:
             - target: 5002
               protocol: tcp
@@ -20,7 +20,7 @@ services:
     random_numbers_s3:
         container_name: random_numbers_run
         build: ./random_numbers_s3
-        image: random_numbers:latest
+        image: gbeesonqa/qa-devops-core-practical-project-random_numbers:latest
         ports:
             - target: 5003
               protocol: tcp
@@ -28,7 +28,7 @@ services:
     logic_s4:
         container_name: logic_s4_run
         build: ./logic_s4
-        image: logic_s4:latest
+        image: gbeesonqa/qa-devops-core-practical-project-logic_s4:latest
         ports:
             - target: 5004
               protocol: tcp

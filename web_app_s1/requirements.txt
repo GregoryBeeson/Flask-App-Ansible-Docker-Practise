@@ -1,3 +1,9 @@
 Flask
 flask-requests==0.0.14
 requests
+pytest
+pytest-cov
+flask-testing
+flask_wtf
+Flask-SQLAlchemy
+SQLAlchemy<1.4

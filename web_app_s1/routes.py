@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 import requests
-from __init__ import app
+from web_app_s1 import app
 
 
 @app.route('/')
